@@ -61,7 +61,7 @@ class Raw_data:
             self.load_data_in_ULTRA_format(data_path, file_prefix, rank_cut)
         
         # files in libsvm data format
-        elif os.path.isfile(libsvm_judge_path):
+        elif os.path.isfile(libsvm_judge_path): # --> 这个分支被执行
             cprint('use libsvm format!', 'green')
             self.load_data_in_libsvm_format(data_path, file_prefix, rank_cut)
 

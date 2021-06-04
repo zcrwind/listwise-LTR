@@ -208,12 +208,7 @@ class Raw_data:
             (data_path, file_prefix))
         self.load_basic_data_information(data_path)
 
-        feature_fin = open(
-            data_path +
-            file_prefix +
-            '/' +
-            file_prefix +
-            '.txt')
+        feature_fin = open(data_path + file_prefix + '/' + file_prefix + '.txt')
         qid_to_idx = {}
         line_num = -1
         for line in feature_fin:
